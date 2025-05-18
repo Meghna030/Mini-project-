@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Med-Mate</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .welcome-section {
+      background: url('medical-4966884_1280.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .welcome-section h1 {
+      font-size: 2.5rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    nav {
+      background-color: #34495E;
+      overflow: hidden;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      display: inline-block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      background-color: #1ABC9C;
+    }
+
+    section {
+      padding: 2rem;
+      display: none;
+      background-color: #ffffff;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .contact-form {
+      max-width: 400px;
+      margin: auto;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+    }
+
+    .thank-you {
+      display: none;
+      color: green;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="welcome-section" id="welcome">
+  <h1>Welcome to Med-Mate – Your Health Partner</h1>
+</div>
+
+<nav>
+  <a onclick="showSection('home')">Home</a>
+  <a onclick="showSection('gallery')">Image Gallery</a>
+  <a onclick="showSection('about')">About</a>
+  <a onclick="showSection('contact')">Contact Us</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <h2>Home</h2>
+
+  <div>
+    <img src="https://cdn.pixabay.com/photo/2017/08/06/09/59/medication-2584026_1280.jpg" alt="Tracking Pills">
+    <p>Med-Mate helps track your daily medications and reminds you on time.</p>
+  </div>
+
+  <div>
+    <img src="https://cdn.pixabay.com/photo/2019/07/01/10/36/health-4318215_1280.jpg" alt="Doctor Connection">
+    <p>Stay connected with your doctor using exportable reports.</p>
+  </div>
+
+  <div>
+    <img src="https://cdn.pixabay.com/photo/2016/11/29/09/08/antibiotic-1869284_1280.jpg" alt="Inventory">
+    <p>Inventory management ensures you never run out of medicine.</p>
+  </div>
+
+  <div>
+    <img src="https://cdn.pixabay.com/photo/2018/03/11/09/33/medical-3210141_1280.jpg" alt="Elderly Accessibility">
+    <p>Built with simplicity and accessibility for elderly users.</p>
+  </div>
+
+  <div>
+    <img src="https://cdn.pixabay.com/photo/2018/02/22/17/36/medicine-3170028_1280.jpg" alt="Medicine Routine">
+    <p>Customizable schedules for complex medicine routines.</p>
+  </div>
+
+  <h3>Why Choose Med-Mate?</h3>
+  <ul>
+    <li>Automatic pill reminders</li>
+    <li>Refill alerts before you run out</li>
+    <li>Emergency contact notification</li>
+    <li>Doctor-friendly downloadable reports</li>
+    <li>Accessible design for elderly users</li>
+  </ul>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h2>Image Gallery</h2>
+  <div class="gallery-grid">
+    <div><img src="https://cdn.pixabay.com/photo/2018/02/01/07/43/pills-3129392_1280.jpg"><p>Smart reminders for meds</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2021/01/11/14/27/capsules-5906953_1280.jpg"><p>Capsule tracking</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2020/06/28/18/38/pills-5350376_1280.jpg"><p>Color-coded alerts</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2015/09/04/23/08/medications-922457_1280.jpg"><p>Easy medication input</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2018/04/13/20/27/medicine-3313979_1280.jpg"><p>Reminder dashboard</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/capsule-1853400_1280.jpg"><p>Timely dosage system</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2016/11/18/15/07/pharmacy-1835625_1280.jpg"><p>Pharmacy integration</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2020/03/25/09/58/medical-4969164_1280.jpg"><p>Modern UI</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2016/10/25/13/16/medicine-1766221_1280.jpg"><p>Medicine tracker</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2016/10/30/05/57/health-1784338_1280.jpg"><p>Daily schedule</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2016/10/29/09/53/medicine-1781322_1280.jpg"><p>Pill ID system</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2017/08/06/09/59/medication-2584027_1280.jpg"><p>Elderly-safe fonts</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2017/08/06/09/59/medication-2584028_1280.jpg"><p>Monitor multiple users</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2020/10/07/21/14/medicine-5634383_1280.jpg"><p>Security & privacy</p></div>
+    <div><img src="https://cdn.pixabay.com/photo/2016/11/18/14/53/medications-1835615_1280.jpg"><p>Doctor reports</p></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About</h2>
+  <img src="https://cdn.pixabay.com/photo/2020/01/16/11/58/doctor-4765884_1280.jpg" alt="Team Collaboration">
+  <img src="https://cdn.pixabay.com/photo/2017/08/02/00/49/healthcare-2562372_1280.jpg" alt="App Design">
+
+  <p><strong>Our Goal:</strong> Med-Mate is designed to reduce the risk of missed medications and help people live healthier lives through smart technology. Our mission is to automate medication management in a safe, secure, and simple way.</p>
+
+  <p><strong>Uses of Med-Mate:</strong></p>
+  <ul>
+    <li>Schedule and remind daily doses</li>
+    <li>Track skipped or taken medications</li>
+    <li>Monitor inventory and set refill alerts</li>
+    <li>Connect caregivers or family for remote monitoring</li>
+    <li>Export health reports for doctors and clinics</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form class="contact-form" onsubmit="submitForm(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email ID:</label>
+    <input type="text" id="email" required>
+
+    <label for="info">Message:</label>
+    <textarea id="info" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+  <div class="thank-you" id="thankYouMsg">Thank you for reaching out to us. We will contact you soon!</div>
+</section>
+
+<script>
+  function showSection(id) {
+    document.getElementById("welcome").style.display = "none";
+    const sections = document.querySelectorAll("section");
+    sections.forEach(section => section.style.display = "none");
+    document.getElementById(id).style.display = "block";
+  }
+
+  function submitForm(event) {
+    event.preventDefault();
+    document.getElementById("thankYouMsg").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
+
+
+
